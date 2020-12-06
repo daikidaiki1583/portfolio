@@ -1,0 +1,42 @@
+$gray:#c0c0c0;
+
+.training-item{
+    margin: 16px 8px;
+    padding:8px;
+    border-radius: 5px;
+    box-shadow:2px 2px 5px  rgba(0,0,0,0.5);
+    position: relative;
+
+    form{
+        .date-input{
+            height: 32px;
+            width: 200px;
+            padding: 0 4px;
+            border:$gray 1px solid;
+        }
+        .count-input{
+            height: 32px;
+            width: 200px;
+            padding: 0 4px;
+            border:$gray 1px solid;
+        }
+    }
+
+    .date{
+        width: 40% !important;
+    }
+
+    .count{
+        width: 40% !important;        
+    }
+
+    .error{
+        color:red;
+    }
+
+    .delete-training{
+        position: absolute;
+        top:8px;
+        right: 16px;
+    }
+}

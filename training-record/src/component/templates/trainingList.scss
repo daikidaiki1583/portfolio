@@ -1,0 +1,52 @@
+$gray:#c0c0c0;
+
+.container{
+    padding: 0 10%;
+
+    h1{
+        margin: 16px 8px;
+    }
+
+    .input-form{
+        margin: 16px ;
+        display: none;
+
+        &.active{
+            display: block;
+        }
+
+        .input-training-name{
+            height: 32px;
+            width: 200px;
+            padding: 0 4px;
+            border:$gray 1px solid;
+        }
+
+        .add-training{
+            height: 32px;
+        }
+    }
+    
+    .add-item{
+        color:$gray;
+        transition: 0.5s;
+    }
+
+    .add-item:hover{
+        color: #00bfff;
+        transition: 0.5s;
+    }
+
+
+    .main{
+        display: grid;
+        grid-template-columns: 70%;
+        // flex-wrap:wrap;
+    }
+}
+
+@media (max-width: 960px){
+    .container{
+        padding: 0 5%;
+    }   
+}
